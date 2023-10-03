@@ -90,3 +90,55 @@ conda env remove --name myenv
 ### Conclusion:
 
 Using Conda (or any environment manager) is crucial for maintaining clean, isolated, and reproducible development environments. It ensures that your projects remain portable and that dependencies don't clash between projects.
+
+## VENV
+
+To create and activate a local Python environment using `venv`, follow these steps:
+
+### 1. Creating a Virtual Environment:
+
+First, navigate to the directory where you want to create the virtual environment. Then, use the `venv` module to create the environment. Replace `myenv` with your desired environment name:
+
+```bash
+python -m venv myenv
+```
+
+This will create a directory named `myenv` (or whatever name you choose) in the current directory. This directory will contain the Python interpreter, the standard library, and various supporting files.
+
+### 2. Activating the Virtual Environment:
+
+Once the environment is created, you need to activate it. The activation command differs based on your operating system:
+
+- **Linux or macOS**:
+
+  ```bash
+  source myenv/bin/activate
+  ```
+
+- **Windows** (Command Prompt):
+
+  ```bash
+  .\myenv\Scripts\activate
+  ```
+
+- **Windows** (PowerShell):
+
+  ```bash
+  .\myenv\Scripts\Activate.ps1
+  ```
+
+When the environment is activated, your shell prompt will change to show the name of the activated environment. Any Python packages you install while the environment is activated will be installed in this environment, isolated from the global Python environment.
+
+### 3. Deactivating the Virtual Environment:
+
+To deactivate the virtual environment and return to the global Python environment, simply run:
+
+```bash
+deactivate
+```
+
+### Note:
+
+Ensure you have the `venv` module installed. It comes pre-installed with Python versions 3.3 and later. If you're using a version of Python prior to 3.3, you might need to install `virtualenv` which offers similar functionality.
+
+
