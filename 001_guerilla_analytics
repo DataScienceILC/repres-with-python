@@ -31,3 +31,55 @@ Here are the seven Guerrilla Analytics Principles:
    - This principle emphasizes the importance of being able to quickly set up or tear down your analytical environments, ensuring consistency across different stages of a project and facilitating collaboration among team members.
 
 By adhering to these principles, data analysts can produce high-quality, defensible work even in fast-paced and uncertain environments. The principles provide a framework for managing the complexities and uncertainties that often arise in data-intensive projects.
+
+Certainly! The Guerrilla Analytics principles emphasize a structured approach to data analysis, ensuring that work is reproducible, auditable, and defensible. Based on these principles, a typical project structure might include directories for data provenance, work products, versioning, and so on.
+
+Here's a Python function that sets up such a folder structure:
+
+```python
+import os
+
+def setup_guerrilla_project(project_name):
+    """
+    Create a folder structure for a new project based on Guerrilla Analytics principles.
+    
+    Args:
+    - project_name (str): Name of the project.
+    """
+    
+    # Define the main project directory
+    project_dir = os.path.join(os.getcwd(), project_name)
+    
+    # Define subdirectories based on Guerrilla Analytics principles
+    subdirs = [
+        'data/raw',          # For raw, unmodified data
+        'data/processed',    # For cleaned and processed data
+        'src',               # For source code
+        'notebooks',         # For Jupyter notebooks or other exploratory scripts
+        'output/figures',    # For generated figures/plots
+        'output/tables',     # For generated tables
+        'docs',              # For documentation
+        'logs',              # For logs (e.g., from data processing steps)
+        'models',            # For trained machine learning models
+        'tests',             # For test scripts and data
+        'versioning'         # For version control related files (if not using git or similar)
+    ]
+    
+    # Create the directories
+    os.makedirs(project_dir, exist_ok=True)
+    for subdir in subdirs:
+        os.makedirs(os.path.join(project_dir, subdir), exist_ok=True)
+    
+    print(f"Project {project_name} set up at {project_dir}")
+
+# Example usage:
+# setup_guerrilla_project('my_new_project')
+```
+
+When you run the `setup_guerrilla_project` function with a project name, it will create the specified folder structure in the current working directory.
+
+Note: This is a basic structure and can be further customized or expanded based on the specific needs of your projects or any additional Guerrilla Analytics principles you'd like to incorporate.
+
+To run this function run 
+
+`python -m setup_guerrilla_project("project_name")` from the root folder in which you want to create this new project. E.g. your Documents folder.
