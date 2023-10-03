@@ -1,1 +1,33 @@
+The "Guerrilla Analytics" approach was introduced by Enda Ridge in his book "Guerrilla Analytics: A Practical Approach to Working with Data." The book emphasizes the challenges faced by data analysts when working in dynamic, often chaotic environments, such as startups or rapidly evolving projects. To address these challenges, Ridge introduced the Seven Guerrilla Analytics Principles. These principles are designed to ensure that work is as reproducible, auditable, and as defensible as possible, even under challenging conditions.
 
+Here are the seven Guerrilla Analytics Principles:
+
+1. **Provenance**: 
+   - Always know the source of your data.
+   - This principle emphasizes the importance of understanding where your data comes from, ensuring its authenticity and reliability.
+
+2. **Work Products**:
+   - Everything is a work product.
+   - This means that every piece of code, every analysis, every chart, and every intermediate data transformation is valuable and should be treated as a deliverable product.
+
+3. **Auditability**:
+   - Always ensure your work is auditable.
+   - This principle stresses the importance of keeping track of data transformations, analyses, and decisions so that others (or even your future self) can understand and validate your work.
+
+4. **No Manual Steps**:
+   - Avoid manual data handling steps in your workflow.
+   - Manual steps are error-prone and can introduce inconsistencies. Automating processes ensures repeatability and reduces the chance of human error.
+
+5. **Versioning**:
+   - Always version your data, code, and environments.
+   - Versioning ensures that you can roll back to previous states, compare changes over time, and reproduce past results.
+
+6. **Reproducibility**:
+   - Always ensure your work is reproducible.
+   - This means that given the same input data and code, anyone should be able to reproduce the same results. This principle is closely related to the "No Manual Steps" principle.
+
+7. **Disposable Environments**:
+   - Ensure your analytical environments can be easily recreated.
+   - This principle emphasizes the importance of being able to quickly set up or tear down your analytical environments, ensuring consistency across different stages of a project and facilitating collaboration among team members.
+
+By adhering to these principles, data analysts can produce high-quality, defensible work even in fast-paced and uncertain environments. The principles provide a framework for managing the complexities and uncertainties that often arise in data-intensive projects.
