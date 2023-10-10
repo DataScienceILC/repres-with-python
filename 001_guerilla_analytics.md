@@ -1,3 +1,5 @@
+# Data Management and Reproducible Research with Guerilla Analytics
+
 The "Guerrilla Analytics" approach was introduced by Enda Ridge in his book "Guerrilla Analytics: A Practical Approach to Working with Data." The book emphasizes the challenges faced by data analysts when working in dynamic, often chaotic environments, such as startups or rapidly evolving projects. To address these challenges, Ridge introduced the Seven Guerrilla Analytics Principles. These principles are designed to ensure that work is as reproducible, auditable, and as defensible as possible, even under challenging conditions.
 
 Here are the seven Guerrilla Analytics Principles:
