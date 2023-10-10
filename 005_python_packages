@@ -1,3 +1,5 @@
+# How to build a Python package from a (collection of) function(s) 
+
 Building a Python package involves several steps. Here's a step-by-step guide to help you build a Python package from a collection of self-defined functions and a dataset:
 
 1. **Directory Structure**:
