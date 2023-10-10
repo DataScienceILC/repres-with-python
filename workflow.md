@@ -36,8 +36,17 @@ A --> R[Create Dockerfile]
 R --> S[Build Docker Image]
 S --> T[Run Docker Container]
 
+%% Python Library Development
+A --> V[Design Library API]
+V --> W[Write Library Code]
+W --> X[Create Library Documentation]
+X --> Y[Package Library for Distribution]
+Y --> Z[Push Library to PyPI or other distribution platforms]
+
 %% End
 F --> U[End Project]
 Q --> U
 T --> U
+Z --> U
+
 ```
