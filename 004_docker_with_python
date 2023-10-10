@@ -1,5 +1,4 @@
-
-
+# Running Jupyter Lab in a Docker Container
 
 Running a Docker container with Jupyter Lab inside involves a few steps. Here's a step-by-step guide:
 
