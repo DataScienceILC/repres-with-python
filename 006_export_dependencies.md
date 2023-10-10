@@ -1,4 +1,4 @@
-# Getting a requirements.txt file from your virtual envionment
+# Reproducibility in Python
 
 ## Reproducibility and portability
 The `requirements.txt` file is a fundamental component in Python projects, especially when considering reproducibility and portability. Here's why:
