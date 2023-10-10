@@ -1,3 +1,4 @@
+# Python Environments
 
 Let's walk through the process of creating a Python virtual environment using Conda, starting with the installation of Miniconda.
 

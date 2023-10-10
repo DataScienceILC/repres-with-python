@@ -1,0 +1,58 @@
+---
+title: "Workshop on 'Reproducible Research in Python"
+author: ""
+site: bookdown::bookdown_site
+output: 
+    bookdown::gitbook:
+        css: style.css
+        number_sections: false
+        anchor_sections: false
+        split_by: chapter
+        config:
+            sharing:
+                 github: no
+                 facebook: no
+                 twitter: no
+                 all: no
+            toc:
+                collapse: section
+                scroll_highlight: yes
+                before: <li class="toc-logo"><a href="./"></a> <h4 class=".paddingtitel ">RePresInPython</h2></li>
+header-includes:
+  - \usepackage{fontawesome5}
+---
+
+```{r include = FALSE}
+# Define the web addresses for the course
+# run as needed, not included automatically because of stuff (aka git complains)
+githuburl <- "https://github.com/DataScienceILC/repres-with-python"
+readerurl <- ""
+email <- "marc.teunis@hu.nl"
+
+save(
+    list = c("githuburl", "readerurl", "email"), 
+    file = "course_urls.RData")
+```
+
+
+```{r include = FALSE, eval = TRUE}
+# set CSS for objects
+knitr::opts_chunk$set(
+  class.source="Rchunk", 
+  class.output="Rout", 
+  warning = FALSE,
+  error = FALSE,
+  message = FALSE)
+```
+
+# Introduction {-}
+
+Download the source code [`r icons::fontawesome("github")`](https://github.com/DataScienceILC/repres-with-python)
+
+
+This reader contains a number of workflows and instructions on how to setup a complete programming environment for working with Python
+
+The steps include:
+
+ 1. Organize your work and files and think about naming conventions, where to store which files and how to manage scripts, data and meta-data. This is decribed in the [Guerilla Analytics documentation]()
+ 2. 
