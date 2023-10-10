@@ -1,4 +1,4 @@
-# Here's a step-by-step guide on the GitHub workflow 
+# The GitHub workflow 
 
 ### 1. Create a New Repo Locally
 
